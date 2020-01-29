@@ -8,11 +8,10 @@ view: inventory_items {
     sql: ${TABLE}.id ;;
   }
 
-  measure: merge_conflict_2 {
+  dimension: merge_conflict {
     type: string
-    sql: "this is the second part of the merge conflict - starts line 11 of inv_items view" ;;
+    sql: "this is for merge conflict - starts line 11 of inv_items view" ;;
   }
-
 
   dimension: cost {
     type: number
