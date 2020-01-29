@@ -8,6 +8,11 @@ view: events {
     sql: ${TABLE}.id ;;
   }
 
+  dimension: commit {
+    type: string
+    sql: "did this work?" ;;
+  }
+
   dimension_group: created {
     type: time
     timeframes: [
