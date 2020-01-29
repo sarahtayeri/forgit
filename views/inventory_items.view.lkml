@@ -8,6 +8,11 @@ view: inventory_items {
     sql: ${TABLE}.id ;;
   }
 
+  dimension: merge_conflict {
+    type: string
+    sql: "this is for merge conflict - starts line 11 of inv_items view" ;;
+  }
+
   dimension: cost {
     type: number
     sql: ${TABLE}.cost ;;
