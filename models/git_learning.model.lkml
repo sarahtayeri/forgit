@@ -62,7 +62,16 @@ explore: orders {
   }
 }
 
-explore: products {}
+explore: products {
+  hidden: yes
+}
+
+# explore: products_2 {
+#   extends: [products]
+#   join: order_items {
+#     sql_on: ${products.id}=${order_items.id} ;;
+#   }
+# }
 
 explore: schema_migrations {}
 
